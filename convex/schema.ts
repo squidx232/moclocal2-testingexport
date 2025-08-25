@@ -111,6 +111,7 @@ const applicationTables = {
     name: v.string(),
     description: v.optional(v.string()),
     approverUserIds: v.optional(v.array(v.id("users"))),
+    approverUserId: v.optional(v.id("users")), // Legacy field - will be removed after migration
     isActive: v.optional(v.boolean()),
   }),
 
