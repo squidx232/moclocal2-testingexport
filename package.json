@@ -8,7 +8,8 @@
     "dev:frontend": "vite --open",
     "dev:backend": "convex dev",
 
-    "build": "convex dev --once && vite build",
+    "build": "vite build",
+    "deploy:convex": "convex deploy --typecheck=disable",
     "preview": "vite preview --strictPort",
 
     "deploy:no-typecheck": "convex deploy --typecheck=disable",
